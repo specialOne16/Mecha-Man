@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://3stc3lgcp0ht"]
+
+[ext_resource type="Script" uid="uid://oq5fipipotvs" path="res://entities/player/player.gd" id="1_symyc"]
+[ext_resource type="Resource" uid="uid://dm5eqitpvr8ru" path="res://movement_aim.tres" id="2_abrql"]
+[ext_resource type="Script" uid="uid://ctr135waopvwj" path="res://entities/player/components/movement.gd" id="3_fkugw"]
+[ext_resource type="Resource" uid="uid://rvscub2pvkyb" path="res://movement_thrust.tres" id="3_sglur"]
+[ext_resource type="Script" uid="uid://bnxlt0en4jjbp" path="res://entities/player/player_parameters.gd" id="4_bls4j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sglur"]
+size = Vector2(40, 40)
+
+[node name="Player" type="RigidBody2D" unique_id=198356957]
+collision_mask = 16
+gravity_scale = 0.0
+lock_rotation = true
+script = ExtResource("1_symyc")
+
+[node name="PlayerParameters" type="Node" parent="." unique_id=1030798545]
+script = ExtResource("4_bls4j")
+metadata/_custom_type_script = "uid://bnxlt0en4jjbp"
+
+[node name="Panel" type="Panel" parent="." unique_id=623779532]
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+
+[node name="Node2D" type="Node2D" parent="." unique_id=551537168]
+
+[node name="Panel2" type="Panel" parent="Node2D" unique_id=2077034181]
+offset_left = 13.0
+offset_top = -4.0
+offset_right = 31.0
+offset_bottom = 4.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1134507900]
+shape = SubResource("RectangleShape2D_sglur")
+
+[node name="Components" type="Node" parent="." unique_id=1048090195]
+
+[node name="PlayerMovement" type="Node" parent="Components" unique_id=556996523 node_paths=PackedStringArray("body", "parameters")]
+script = ExtResource("3_fkugw")
+body = NodePath("../..")
+parameters = NodePath("../../PlayerParameters")
+movement_aim = ExtResource("2_abrql")
+movement_thrust = ExtResource("3_sglur")
+metadata/_custom_type_script = "uid://ctr135waopvwj"

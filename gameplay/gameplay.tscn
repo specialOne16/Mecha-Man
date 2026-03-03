@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://cyj5w8yibi6fa"]
+
+[ext_resource type="Script" uid="uid://du1wa1ycsg21b" path="res://gameplay/gameplay.gd" id="1_41n4r"]
+[ext_resource type="PackedScene" uid="uid://3stc3lgcp0ht" path="res://entities/player/player.tscn" id="1_nyvx4"]
+[ext_resource type="Resource" uid="uid://cttcqvhulw284" path="res://in_game_mode.tres" id="2_ueusv"]
+
+[node name="Gameplay" type="Node2D" unique_id=1727111752]
+script = ExtResource("1_41n4r")
+in_game_mode = ExtResource("2_ueusv")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1366491709]
+collision_layer = 16
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=1587446067]
+build_mode = 1
+polygon = PackedVector2Array(135, 58, 1066, 58, 1067, 324, 822, 324, 822, 505, 341, 503, 337, 313, 140, 310)
+
+[node name="Panel" type="Panel" parent="." unique_id=1303480091]
+offset_left = -4.0
+offset_top = 307.0
+offset_right = 339.0
+offset_bottom = 641.0
+
+[node name="Panel2" type="Panel" parent="." unique_id=1582287896]
+offset_left = 822.0
+offset_top = 323.0
+offset_right = 1165.0
+offset_bottom = 657.0
+
+[node name="Panel3" type="Panel" parent="." unique_id=329924119]
+offset_left = 275.0
+offset_top = 503.0
+offset_right = 915.0
+offset_bottom = 837.0
+
+[node name="Panel4" type="Panel" parent="." unique_id=1803667360]
+offset_left = 1067.0
+offset_top = -5.0
+offset_right = 1238.0
+offset_bottom = 329.0
+
+[node name="Panel5" type="Panel" parent="." unique_id=134361045]
+offset_left = -33.0
+offset_top = -15.0
+offset_right = 138.0
+offset_bottom = 319.0
+
+[node name="Panel6" type="Panel" parent="." unique_id=1904193291]
+offset_left = -33.0
+offset_top = -15.0
+offset_right = 1238.0
+offset_bottom = 59.0
+
+[node name="Player" parent="." unique_id=1600769702 instance=ExtResource("1_nyvx4")]
+position = Vector2(365, 283)

@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 GUIDE="*uid://p2jwrgjcbexr"
 
+[display]
+
+window/size/mode=4
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/guide/plugin.cfg")

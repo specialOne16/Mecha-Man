@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://3stc3lgcp0ht"]
 
 [ext_resource type="Script" uid="uid://oq5fipipotvs" path="res://entities/player/player.gd" id="1_symyc"]
-[ext_resource type="Resource" uid="uid://dm5eqitpvr8ru" path="res://movement_aim.tres" id="2_abrql"]
+[ext_resource type="Resource" uid="uid://dm5eqitpvr8ru" path="res://inputs/movement_aim.tres" id="2_abrql"]
 [ext_resource type="Script" uid="uid://ctr135waopvwj" path="res://entities/player/components/movement.gd" id="3_fkugw"]
-[ext_resource type="Resource" uid="uid://rvscub2pvkyb" path="res://movement_thrust.tres" id="3_sglur"]
+[ext_resource type="Resource" uid="uid://rvscub2pvkyb" path="res://inputs/movement_thrust.tres" id="3_sglur"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_bls4j"]
 friction = 0.0

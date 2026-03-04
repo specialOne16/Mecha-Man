@@ -2,8 +2,9 @@
 
 [ext_resource type="Script" uid="uid://du1wa1ycsg21b" path="res://gameplay/gameplay.gd" id="1_41n4r"]
 [ext_resource type="PackedScene" uid="uid://3stc3lgcp0ht" path="res://entities/player/player.tscn" id="1_nyvx4"]
-[ext_resource type="Resource" uid="uid://cttcqvhulw284" path="res://in_game_mode.tres" id="2_ueusv"]
+[ext_resource type="Resource" uid="uid://c7ldak81l357y" path="res://inputs/in_game_controller.tres" id="2_ueusv"]
 [ext_resource type="Script" uid="uid://n47pcbc3mtur" path="res://debug/player_debug.gd" id="4_ktb3l"]
+[ext_resource type="PackedScene" uid="uid://dkr80d2pi0d41" path="res://addons/guide/debugger/guide_debugger.tscn" id="5_gvicd"]
 
 [node name="Gameplay" type="Node2D" unique_id=1727111752]
 script = ExtResource("1_41n4r")
@@ -15,7 +16,7 @@ collision_mask = 0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=1587446067]
 build_mode = 1
-polygon = PackedVector2Array(135, 58, 1066, 58, 1067, 324, 822, 324, 822, 505, 341, 503, 337, 313, 140, 310)
+polygon = PackedVector2Array(135, 58, 1066, 58, 1067, 324, 822, 324, 822, 505, 341, 505, 337, 313, 140, 310)
 
 [node name="Panel" type="Panel" parent="." unique_id=1303480091]
 offset_left = -4.0
@@ -56,11 +57,18 @@ offset_bottom = 59.0
 [node name="Player" parent="." unique_id=1600769702 instance=ExtResource("1_nyvx4")]
 position = Vector2(365, 283)
 
-[node name="PlayerDebug" type="Label" parent="." unique_id=1717694834 node_paths=PackedStringArray("player")]
-offset_left = 15.0
-offset_top = 7.0
-offset_right = 55.0
-offset_bottom = 30.0
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1322183348]
+
+[node name="PlayerDebug" type="Label" parent="CanvasLayer" unique_id=1717694834 node_paths=PackedStringArray("player")]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_top = -1.0
+offset_bottom = 22.0
+grow_horizontal = 0
 script = ExtResource("4_ktb3l")
-player = NodePath("../Player")
+player = NodePath("../../Player")
 metadata/_custom_type_script = "uid://n47pcbc3mtur"
+
+[node name="GuideDebugger" parent="CanvasLayer" unique_id=2037763901 instance=ExtResource("5_gvicd")]

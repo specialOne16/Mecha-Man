@@ -11,7 +11,7 @@ var _direction: Vector2 = Vector2.RIGHT
 
 func _physics_process(_delta: float) -> void:
 	if movement_aim.value_axis_2d != Vector2.ZERO:
-		_direction = -movement_aim.value_axis_2d
+		_direction = -movement_aim.value_axis_2d.normalized()
 	
 	node_2d.rotation = (-_direction).angle()
 	if movement_thrust.value_axis_1d > 0:

@@ -14,6 +14,12 @@ _limits = [0.0, 1.0, -1.0, 1.0]
 _data = [Vector2(-1, 1), 0.0, 0.0, 0, 0, Vector2(-0.0033898354, 0.49723762), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
 point_count = 3
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fkugw"]
+bg_color = Color(0.27872655, 0.6952107, 0.44364572, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8fjmc"]
+bg_color = Color(0.5211622, 0.46977103, 0.45059854, 1)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sglur"]
 size = Vector2(40, 40)
 
@@ -33,6 +39,7 @@ offset_left = -20.0
 offset_top = -20.0
 offset_right = 20.0
 offset_bottom = 20.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_fkugw")
 
 [node name="Node2D" type="Node2D" parent="." unique_id=551537168]
 
@@ -41,6 +48,7 @@ offset_left = 13.0
 offset_top = -4.0
 offset_right = 31.0
 offset_bottom = 4.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_8fjmc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1134507900]
 shape = SubResource("RectangleShape2D_sglur")

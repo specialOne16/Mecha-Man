@@ -8,6 +8,11 @@
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_bls4j"]
 friction = 0.0
 
+[sub_resource type="Curve" id="Curve_bls4j"]
+_limits = [0.0, 1.0, -1.0, 1.0]
+_data = [Vector2(-1, 1), 0.0, 0.0, 0, 0, Vector2(-0.0033898354, 0.49723762), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 3
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sglur"]
 size = Vector2(40, 40)
 
@@ -17,6 +22,8 @@ physics_material_override = SubResource("PhysicsMaterial_bls4j")
 gravity_scale = 0.5
 lock_rotation = true
 script = ExtResource("1_symyc")
+force_curve = SubResource("Curve_bls4j")
+stopping_force = Vector2(0, 0)
 
 [node name="Panel" type="Panel" parent="." unique_id=623779532]
 offset_left = -20.0

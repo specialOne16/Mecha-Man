@@ -11,16 +11,17 @@ var _direction: Vector2 = Vector2.RIGHT
 
 func _physics_process(_delta: float) -> void:
 	if movement_aim.value_axis_2d != Vector2.ZERO:
-		_direction = movement_aim.value_axis_2d.normalized()
+		_direction = movement_aim.value_axis_2d
 	
 	node_2d.rotation = (-_direction).angle()
 	if movement_thrust.value_axis_1d > 0:
 		var force = lerp(player.min_jet_force, player.max_jet_force, movement_thrust.value_axis_1d)
-		player.apply_central_force(_direction * force)
-		if _direction.y < 0:
-			player.gravity_scale = _direction.y + 1
+		var y_based_scale = player.force_curve.sample(_direction.y)
+		player.apply_central_force(_direction.normalized() * force * y_based_scale)
 	else:
 		var stopping_direction = -player.linear_velocity
 		if stopping_direction.y < 0: stopping_direction.y = 0
 		player.apply_central_force(stopping_direction * player.stopping_force)
-		player.gravity_scale = 1
+	
+	if player.linear_velocity.length() > player.max_speed:
+		player.linear_velocity = player.linear_velocity.normalized() * player.max_speed

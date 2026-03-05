@@ -15,8 +15,12 @@ func _physics_process(_delta: float) -> void:
 	
 	node_2d.rotation = (-_direction).angle()
 	if movement_thrust.value_axis_1d > 0:
-		player.apply_central_force(_direction * lerp(player.min_jet_force, player.max_jet_force, movement_thrust.value_axis_1d))
+		var force = lerp(player.min_jet_force, player.max_jet_force, movement_thrust.value_axis_1d)
+		player.apply_central_force(_direction * force)
+		if _direction.y < 0:
+			player.gravity_scale = _direction.y + 1
 	else:
 		var stopping_direction = -player.linear_velocity
 		if stopping_direction.y < 0: stopping_direction.y = 0
 		player.apply_central_force(stopping_direction * player.stopping_force)
+		player.gravity_scale = 1

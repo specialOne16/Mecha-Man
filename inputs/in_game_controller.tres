@@ -13,6 +13,8 @@
 [ext_resource type="Resource" uid="uid://rvscub2pvkyb" path="res://inputs/movement_thrust.tres" id="10_wp4qh"]
 [ext_resource type="Script" uid="uid://dsa1dnifd6w32" path="res://addons/guide/guide_mapping_context.gd" id="12_6ljc4"]
 [ext_resource type="Script" uid="uid://bbhoxsiqwo07l" path="res://addons/guide/inputs/guide_input_joy_axis_1d.gd" id="12_iwbgy"]
+[ext_resource type="Resource" uid="uid://bm4vyeulgb5si" path="res://inputs/movement_dash.tres" id="13_iwbgy"]
+[ext_resource type="Script" uid="uid://rvttn472ix6v" path="res://addons/guide/inputs/guide_input_joy_button.gd" id="14_3t4xf"]
 
 [sub_resource type="Resource" id="Resource_5w5ef"]
 script = ExtResource("4_iwbgy")
@@ -99,7 +101,20 @@ script = ExtResource("1_pltg7")
 action = ExtResource("10_wp4qh")
 input_mappings = Array[ExtResource("3_ka5su")]([SubResource("Resource_rirwp"), SubResource("Resource_j2t0o")])
 
+[sub_resource type="Resource" id="Resource_wp4qh"]
+script = ExtResource("14_3t4xf")
+button = 10
+
+[sub_resource type="Resource" id="Resource_edb1w"]
+script = ExtResource("3_ka5su")
+input = SubResource("Resource_wp4qh")
+
+[sub_resource type="Resource" id="Resource_6ljc4"]
+script = ExtResource("1_pltg7")
+action = ExtResource("13_iwbgy")
+input_mappings = Array[ExtResource("3_ka5su")]([SubResource("Resource_edb1w")])
+
 [resource]
 script = ExtResource("12_6ljc4")
-mappings = Array[ExtResource("1_pltg7")]([SubResource("Resource_c5ah4"), SubResource("Resource_ihs0w")])
+mappings = Array[ExtResource("1_pltg7")]([SubResource("Resource_c5ah4"), SubResource("Resource_ihs0w"), SubResource("Resource_6ljc4")])
 metadata/_custom_type_script = "uid://dsa1dnifd6w32"

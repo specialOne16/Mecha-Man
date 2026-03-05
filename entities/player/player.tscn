@@ -4,6 +4,7 @@
 [ext_resource type="Resource" uid="uid://dm5eqitpvr8ru" path="res://inputs/movement_aim.tres" id="2_abrql"]
 [ext_resource type="Script" uid="uid://ctr135waopvwj" path="res://entities/player/components/movement.gd" id="3_fkugw"]
 [ext_resource type="Resource" uid="uid://rvscub2pvkyb" path="res://inputs/movement_thrust.tres" id="3_sglur"]
+[ext_resource type="Resource" uid="uid://bm4vyeulgb5si" path="res://inputs/movement_dash.tres" id="5_fkugw"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_bls4j"]
 friction = 0.0
@@ -22,8 +23,10 @@ physics_material_override = SubResource("PhysicsMaterial_bls4j")
 gravity_scale = 0.5
 lock_rotation = true
 script = ExtResource("1_symyc")
-force_curve = SubResource("Curve_bls4j")
 stopping_force = Vector2(0, 0)
+force_curve = SubResource("Curve_bls4j")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1217699073]
 
 [node name="Panel" type="Panel" parent="." unique_id=623779532]
 offset_left = -20.0
@@ -44,8 +47,19 @@ shape = SubResource("RectangleShape2D_sglur")
 
 [node name="Components" type="Node" parent="." unique_id=1048090195]
 
-[node name="PlayerMovement" type="Node" parent="Components" unique_id=556996523]
+[node name="PlayerMovement" type="Node" parent="Components" unique_id=556996523 node_paths=PackedStringArray("dash_timer", "dash_cooldown_timer")]
 script = ExtResource("3_fkugw")
+dash_timer = NodePath("../../Timers/DashTimer")
+dash_cooldown_timer = NodePath("../../Timers/DashCooldownTimer")
 movement_aim = ExtResource("2_abrql")
 movement_thrust = ExtResource("3_sglur")
+movement_dash = ExtResource("5_fkugw")
 metadata/_custom_type_script = "uid://ctr135waopvwj"
+
+[node name="Timers" type="Node" parent="." unique_id=1354035077]
+
+[node name="DashTimer" type="Timer" parent="Timers" unique_id=1860788696]
+one_shot = true
+
+[node name="DashCooldownTimer" type="Timer" parent="Timers" unique_id=1105950998]
+one_shot = true

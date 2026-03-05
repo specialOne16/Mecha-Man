@@ -7,11 +7,11 @@
 [ext_resource type="Resource" uid="uid://bm4vyeulgb5si" path="res://inputs/movement_dash.tres" id="5_fkugw"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_bls4j"]
-friction = 0.0
+friction = 0.15
 
 [sub_resource type="Curve" id="Curve_bls4j"]
 _limits = [0.0, 1.0, -1.0, 1.0]
-_data = [Vector2(-1, 1), 0.0, 0.0, 0, 0, Vector2(-0.0033898354, 0.49723762), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+_data = [Vector2(-1, 1), 0.0, -0.5867665, 0, 0, Vector2(-0.0033898354, 0.49723762), -0.4586553, -0.3575658, 0, 0, Vector2(1, 0.20224726), 0.0, 0.0, 0, 0]
 point_count = 3
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fkugw"]
@@ -31,6 +31,9 @@ lock_rotation = true
 script = ExtResource("1_symyc")
 stopping_force = Vector2(0, 0)
 force_curve = SubResource("Curve_bls4j")
+neutral_direction_force_scale = 0.625
+dash_duration = 0.125
+dash_cooldown = 0.3
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1217699073]
 

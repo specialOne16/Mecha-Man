@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2900481695",
+    "Type": "Event",
+    "GUID": "{B4421E7A-E57E-4E63-8AA7-BFEE5750458D}",
+    "Language": "SFX",
+    "Hash": "{94605E85-0833-8204-F418-2A3B40D48A22}",
+    "ObjectPath": "Jetpack_Full",
+    "ShortName": "Jetpack_Full",
+    "Path": "Event/Jetpack_Full.bnk",
+    "Media": [
+     {
+      "Id": "989341238",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Jetpack_Engine_Full.wav",
+      "Path": "Media/989341238.wem",
+      "CachePath": "68/{6874BED4-D53A-A309-0B79-3342EAD4F213}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2900481695",
+      "Name": "Jetpack_Full",
+      "ObjectPath": "\\Events\\Default Work Unit\\Jetpack_Full",
+      "GUID": "{B4421E7A-E57E-4E63-8AA7-BFEE5750458D}",
+      "DurationType": "OneShot",
+      "DurationMin": "12.430907",
+      "DurationMax": "12.430907",
+      "MediaRefs": [
+       {
+        "Id": "989341238"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{3F69F3D3-3388-2E5F-8D49-93C38CAE3224}"
+ }
+}

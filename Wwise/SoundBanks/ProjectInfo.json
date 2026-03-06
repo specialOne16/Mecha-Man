@@ -8,6 +8,13 @@
   "CacheRoot": "../../../../../../1Wwise/Mech_20260306/.cache",
   "Platforms": [
    {
+    "Name": "Mac",
+    "GUID": "{6E03F02D-544E-4959-B510-A9191BB717B9}",
+    "BasePlatform": "Mac",
+    "BasePlatformGUID": "{9C6217D5-DD11-4795-87C1-6CE02853C540}",
+    "Path": "Mac"
+   },
+   {
     "Name": "Windows",
     "GUID": "{BFADE9A2-2070-4FEA-94C9-685B58ED3FA0}",
     "BasePlatform": "Windows",
@@ -24,6 +31,6 @@
     "UseAsStandIn": "true"
    }
   ],
-  "FileHash": "{E2CC195E-6B1A-FA45-B211-9B9D7898B931}"
+  "FileHash": "{CAA48B2F-7DB5-6AAA-06A0-920ACBE42183}"
  }
 }

@@ -17,13 +17,20 @@ var _direction: Vector2 = Vector2.RIGHT
 var _constant_force: Vector2 = Vector2.ZERO
 
 func _physics_process(_delta: float) -> void:
-	if movement_aim.value_axis_2d != Vector2.ZERO: _direction = movement_aim.value_axis_2d.normalized()
-	else: _direction = Vector2.UP * player.neutral_direction_force_scale
+	var aiming_upward = false
+	if movement_aim.value_axis_2d != Vector2.ZERO: 
+		_direction = movement_aim.value_axis_2d.normalized()
+		aiming_upward = _direction.y < 0
+	else: 
+		_direction = Vector2.UP * player.neutral_direction_force_scale
+	
 	node_2d.rotation = (-_direction).angle()
 	
 	_constant_force = Vector2.ZERO
 	if dash_timer.time_left <= 0: _handle_jet()
-	if _constant_force.normalized().y < -player.upward_gravity_threshold:
+	
+	var moving_downward = player.linear_velocity.y > player.upward_gravity_threshold
+	if moving_downward and aiming_upward and movement_thrust.value_axis_1d > 0:
 		player.gravity_scale = player.upward_gravity_scale
 	else:
 		player.gravity_scale = player.neutral_gravity_scale

@@ -8,6 +8,7 @@
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_bls4j"]
 friction = 0.15
+bounce = 0.2
 
 [sub_resource type="Curve" id="Curve_bls4j"]
 _limits = [0.0, 1.0, -1.0, 1.0]
@@ -30,6 +31,7 @@ gravity_scale = 0.5
 lock_rotation = true
 script = ExtResource("1_symyc")
 stopping_force = Vector2(0, 0)
+upward_gravity_scale = 0.5
 force_curve = SubResource("Curve_bls4j")
 neutral_direction_force_scale = 0.625
 dash_duration = 0.125

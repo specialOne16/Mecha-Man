@@ -37,3 +37,6 @@ metadata/_custom_type_script = "uid://n47pcbc3mtur"
 
 [node name="AkEvent2D" type="AkEvent2D" parent="." unique_id=1172395633]
 event = ExtResource("7_uk44f")
+trigger_on = 2
+
+[node name="AkListener2D" type="AkListener2D" parent="." unique_id=861323291]

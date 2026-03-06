@@ -14,15 +14,20 @@ class_name PlayerMovement
 
 
 var _direction: Vector2 = Vector2.RIGHT
-
+var _constant_force: Vector2 = Vector2.ZERO
 
 func _physics_process(_delta: float) -> void:
 	if movement_aim.value_axis_2d != Vector2.ZERO: _direction = movement_aim.value_axis_2d.normalized()
 	else: _direction = Vector2.UP * player.neutral_direction_force_scale
-	
 	node_2d.rotation = (-_direction).angle()
 	
+	_constant_force = Vector2.ZERO
 	if dash_timer.time_left <= 0: _handle_jet()
+	if _constant_force.normalized().y < -player.upward_gravity_threshold:
+		player.gravity_scale = player.upward_gravity_scale
+	else:
+		player.gravity_scale = player.neutral_gravity_scale
+	player.apply_central_force(_constant_force)
 	
 	_limit_speed()
 
@@ -51,11 +56,11 @@ func _handle_jet():
 	if movement_thrust.value_axis_1d > 0:
 		var force = lerp(player.min_jet_force, player.max_jet_force, movement_thrust.value_axis_1d)
 		var y_based_scale = player.force_curve.sample(_direction.y)
-		player.apply_central_force(_direction * force * y_based_scale)
+		_constant_force = _direction * force * y_based_scale
 	else:
 		var stopping_direction = -player.linear_velocity
 		if stopping_direction.y < 0: stopping_direction.y = 0
-		player.apply_central_force(stopping_direction * player.stopping_force)
+		_constant_force = stopping_direction * player.stopping_force
 
 
 func _limit_speed():

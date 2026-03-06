@@ -3,6 +3,9 @@ class_name Player
 
 @export var max_speed = 1000
 @export var stopping_force = Vector2.ONE * 5
+@onready var neutral_gravity_scale = gravity_scale
+@export var upward_gravity_scale = 0.1
+@export var upward_gravity_threshold = 0.5
 
 @export_group("Jet")
 @export var min_jet_force = 300

@@ -12,7 +12,7 @@ bounce = 0.2
 
 [sub_resource type="Curve" id="Curve_bls4j"]
 _limits = [0.0, 1.0, -1.0, 1.0]
-_data = [Vector2(-1, 1), 0.0, -0.5867665, 0, 0, Vector2(-0.0033898354, 0.49723762), -0.4586553, 0.0, 0, 0, Vector2(1, 0.20224726), 0.0, 0.0, 0, 0]
+_data = [Vector2(-1, 1), 0.0, -0.5867665, 0, 0, Vector2(-0.0033898354, 0.49723762), -0.4586553, -0.37145907, 0, 0, Vector2(1, 0.20224726), 0.0, 0.0, 0, 0]
 point_count = 3
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fkugw"]
@@ -31,6 +31,7 @@ gravity_scale = 0.5
 lock_rotation = true
 script = ExtResource("1_symyc")
 stopping_force = Vector2(0, 0)
+upward_gravity_scale = 0.0
 force_curve = SubResource("Curve_bls4j")
 neutral_direction_force_scale = 0.625
 dash_duration = 0.125

@@ -31,7 +31,6 @@ gravity_scale = 0.5
 lock_rotation = true
 script = ExtResource("1_symyc")
 stopping_force = Vector2(0, 0)
-upward_gravity_scale = 0.5
 force_curve = SubResource("Curve_bls4j")
 neutral_direction_force_scale = 0.625
 dash_duration = 0.125

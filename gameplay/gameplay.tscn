@@ -6,6 +6,7 @@
 [ext_resource type="TileSet" uid="uid://b2chf4j5d8fmn" path="res://gameplay/assets/Tilesets.tres" id="3_7pdct"]
 [ext_resource type="Script" uid="uid://n47pcbc3mtur" path="res://debug/player_debug.gd" id="4_ktb3l"]
 [ext_resource type="PackedScene" uid="uid://dkr80d2pi0d41" path="res://addons/guide/debugger/guide_debugger.tscn" id="5_gvicd"]
+[ext_resource type="WwiseEvent" uid="uid://duw3f1onmgf27" path="res://Wwise/resources/Event/{B4421E7A-E57E-4E63-8AA7-BFEE5750458D}.tres" id="7_uk44f"]
 
 [node name="Gameplay" type="Node2D" unique_id=1727111752]
 script = ExtResource("1_41n4r")
@@ -33,3 +34,6 @@ player = NodePath("../../Player")
 metadata/_custom_type_script = "uid://n47pcbc3mtur"
 
 [node name="GuideDebugger" parent="CanvasLayer" unique_id=2037763901 instance=ExtResource("5_gvicd")]
+
+[node name="AkEvent2D" type="AkEvent2D" parent="." unique_id=1172395633]
+event = ExtResource("7_uk44f")

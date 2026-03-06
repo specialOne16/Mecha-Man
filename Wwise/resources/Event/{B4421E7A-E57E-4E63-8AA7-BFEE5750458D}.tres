@@ -1,0 +1,7 @@
+[gd_resource type="WwiseEvent" format=3 uid="uid://duw3f1onmgf27"]
+
+[resource]
+name = "Jetpack_Full"
+id = 2900481695
+guid = "{B4421E7A-E57E-4E63-8AA7-BFEE5750458D}"
+dummy = true

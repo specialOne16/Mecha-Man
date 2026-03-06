@@ -43,3 +43,8 @@ enabled=PackedStringArray("res://addons/guide/plugin.cfg")
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+
+[wwise]
+
+common_user_settings/root_output_path="res://Wwise/SoundBanks"
+project_settings/windows_platform_info="res://Wwise/resources/Windows.tres"

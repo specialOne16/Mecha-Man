@@ -18,7 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 GUIDE="*uid://p2jwrgjcbexr"
-WwiseRuntimeManager="*res://addons/Wwise/runtime/wwise_runtime_manager.gd"
+WwiseRuntimeManager="*uid://dbra3bdixrt1q"
 
 [display]
 

@@ -1,0 +1,46 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2628737843",
+    "Type": "Event",
+    "GUID": "{BE8E59D9-726A-4905-AC18-FA405C9C9523}",
+    "Language": "SFX",
+    "Hash": "{19C18759-ABC0-AA1A-B6EB-CCA12544CC04}",
+    "ObjectPath": "Collision_Medium",
+    "ShortName": "Collision_Medium",
+    "Path": "Event/Collision_Medium.bnk",
+    "Media": [
+     {
+      "Id": "440442150",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Collision_Medium_PH1.wav",
+      "Path": "Media/440442150.wem",
+      "CachePath": "A8/{A8C1DF06-DF57-C667-7557-5D671E5D9BDA}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2628737843",
+      "Name": "Collision_Medium",
+      "ObjectPath": "\\Events\\Default Work Unit\\Collision_Medium",
+      "GUID": "{BE8E59D9-726A-4905-AC18-FA405C9C9523}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "440442150"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{12C8B5E0-D6BE-CBE4-B641-269D319927A3}"
+ }
+}

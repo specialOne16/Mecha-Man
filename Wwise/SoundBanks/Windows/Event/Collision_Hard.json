@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2643477585",
+    "Type": "Event",
+    "GUID": "{DE8EF0BC-7771-4967-96ED-3FDA8A066640}",
+    "Language": "SFX",
+    "Hash": "{23504DFF-6E79-2A61-1C98-90673580B024}",
+    "ObjectPath": "Collision_Hard",
+    "ShortName": "Collision_Hard",
+    "Path": "Event/Collision_Hard.bnk",
+    "Media": [
+     {
+      "Id": "306526562",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Collision_Hard_PH1.wav",
+      "Path": "Media/306526562.wem",
+      "CachePath": "25/{252F9358-168F-D745-DE9F-D6364B22AF66}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2643477585",
+      "Name": "Collision_Hard",
+      "ObjectPath": "\\Events\\Default Work Unit\\Collision_Hard",
+      "GUID": "{DE8EF0BC-7771-4967-96ED-3FDA8A066640}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.5603628",
+      "DurationMax": "2.5603628",
+      "MediaRefs": [
+       {
+        "Id": "306526562"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{EC956390-7A13-193F-A395-22116E3C4007}"
+ }
+}

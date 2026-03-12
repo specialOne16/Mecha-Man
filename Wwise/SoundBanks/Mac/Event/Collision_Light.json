@@ -1,0 +1,46 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "628676570",
+    "Type": "Event",
+    "GUID": "{68BD67C3-D755-49A8-9C52-2EE5148D7913}",
+    "Language": "SFX",
+    "Hash": "{BC5383AF-D0C1-E874-C1B2-4CAF44EE6818}",
+    "ObjectPath": "Collision_Light",
+    "ShortName": "Collision_Light",
+    "Path": "Event/Collision_Light.bnk",
+    "Media": [
+     {
+      "Id": "52401842",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Collision_Small_PH1.wav",
+      "Path": "Media/52401842.wem",
+      "CachePath": "BA/{BA595392-E269-B44A-58BF-F3819D0AE594}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "628676570",
+      "Name": "Collision_Light",
+      "ObjectPath": "\\Events\\Default Work Unit\\Collision_Light",
+      "GUID": "{68BD67C3-D755-49A8-9C52-2EE5148D7913}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "52401842"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{03821CDC-EADD-010D-92A9-C1782D2C00C6}"
+ }
+}

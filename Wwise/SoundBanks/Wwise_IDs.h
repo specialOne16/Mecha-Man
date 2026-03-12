@@ -13,6 +13,9 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID COLLISION_HARD = 2643477585U;
+        static const AkUniqueID COLLISION_LIGHT = 628676570U;
+        static const AkUniqueID COLLISION_MEDIUM = 2628737843U;
         static const AkUniqueID JETPACK_FULL = 2900481695U;
     } // namespace EVENTS
 

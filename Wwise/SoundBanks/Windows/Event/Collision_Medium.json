@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{BE8E59D9-726A-4905-AC18-FA405C9C9523}",
     "Language": "SFX",
-    "Hash": "{19C18759-ABC0-AA1A-B6EB-CCA12544CC04}",
+    "Hash": "{A4BE459A-1982-465F-7A67-EDDDF34629AF}",
     "ObjectPath": "Collision_Medium",
     "ShortName": "Collision_Medium",
     "Path": "Event/Collision_Medium.bnk",
@@ -22,7 +22,7 @@
       "Location": "Loose",
       "ShortName": "Collision_Medium_PH1.wav",
       "Path": "Media/440442150.wem",
-      "CachePath": "A8/{A8C1DF06-DF57-C667-7557-5D671E5D9BDA}.wem"
+      "CachePath": "60/{6038E61C-A656-C789-5B17-7D812CDC9527}.wem"
      }
     ],
     "Events": [
@@ -41,6 +41,6 @@
     ]
    }
   ],
-  "FileHash": "{12C8B5E0-D6BE-CBE4-B641-269D319927A3}"
+  "FileHash": "{214A9188-4FD6-FEA2-35CA-FF4BD47FDDB1}"
  }
 }

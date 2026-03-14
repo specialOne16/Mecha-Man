@@ -1,0 +1,33 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "4139569208",
+    "Type": "Event",
+    "GUID": "{1905EAEF-291E-4EAB-9AEB-8A06A856AA44}",
+    "Language": "SFX",
+    "Hash": "{C8A5AEE1-0596-8201-9D98-FAE4FC8942C3}",
+    "ObjectPath": "Jetpack_Takeoff",
+    "ShortName": "Jetpack_Takeoff",
+    "Path": "Event/Jetpack_Takeoff.bnk",
+    "Events": [
+     {
+      "Id": "4139569208",
+      "Name": "Jetpack_Takeoff",
+      "ObjectPath": "\\Events\\Default Work Unit\\Jetpack_Takeoff",
+      "GUID": "{1905EAEF-291E-4EAB-9AEB-8A06A856AA44}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{AA8D665E-173F-6921-B8F2-9A6BE7E9E2AD}"
+ }
+}

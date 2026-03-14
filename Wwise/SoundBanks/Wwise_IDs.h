@@ -16,7 +16,12 @@ namespace AK
         static const AkUniqueID COLLISION_HARD = 2643477585U;
         static const AkUniqueID COLLISION_LIGHT = 628676570U;
         static const AkUniqueID COLLISION_MEDIUM = 2628737843U;
+        static const AkUniqueID JETPACK_DASH = 4035040332U;
         static const AkUniqueID JETPACK_FULL = 2900481695U;
+        static const AkUniqueID JETPACK_LANDING = 3113435745U;
+        static const AkUniqueID JETPACK_LOOP = 2379307986U;
+        static const AkUniqueID JETPACK_LOOP_END = 1806144520U;
+        static const AkUniqueID JETPACK_TAKEOFF = 4139569208U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS

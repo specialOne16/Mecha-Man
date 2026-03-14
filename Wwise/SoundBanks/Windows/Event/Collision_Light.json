@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{68BD67C3-D755-49A8-9C52-2EE5148D7913}",
     "Language": "SFX",
-    "Hash": "{BC5383AF-D0C1-E874-C1B2-4CAF44EE6818}",
+    "Hash": "{B30C7B3E-7D2A-5C6B-9347-8B30B3DFF5B2}",
     "ObjectPath": "Collision_Light",
     "ShortName": "Collision_Light",
     "Path": "Event/Collision_Light.bnk",
@@ -22,7 +22,7 @@
       "Location": "Loose",
       "ShortName": "Collision_Small_PH1.wav",
       "Path": "Media/52401842.wem",
-      "CachePath": "BA/{BA595392-E269-B44A-58BF-F3819D0AE594}.wem"
+      "CachePath": "8D/{8D7F98D9-3E44-2686-BC8A-AED156D99973}.wem"
      }
     ],
     "Events": [
@@ -41,6 +41,6 @@
     ]
    }
   ],
-  "FileHash": "{5DC45096-632E-8574-86C6-F0D4BB7F0187}"
+  "FileHash": "{F06DA095-389E-CA74-B52D-877E41A277FD}"
  }
 }

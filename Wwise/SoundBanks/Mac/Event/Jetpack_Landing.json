@@ -1,0 +1,33 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3113435745",
+    "Type": "Event",
+    "GUID": "{B0697C3B-3480-411F-AF21-4459072C704A}",
+    "Language": "SFX",
+    "Hash": "{DA28FCE1-4522-7167-C3A9-89532CFB6218}",
+    "ObjectPath": "Jetpack_Landing",
+    "ShortName": "Jetpack_Landing",
+    "Path": "Event/Jetpack_Landing.bnk",
+    "Events": [
+     {
+      "Id": "3113435745",
+      "Name": "Jetpack_Landing",
+      "ObjectPath": "\\Events\\Default Work Unit\\Jetpack_Landing",
+      "GUID": "{B0697C3B-3480-411F-AF21-4459072C704A}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{2C84CD60-A53B-F40F-44B2-91A42436B928}"
+ }
+}

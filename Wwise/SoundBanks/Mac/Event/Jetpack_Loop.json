@@ -1,0 +1,33 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2379307986",
+    "Type": "Event",
+    "GUID": "{95C6F0E1-1985-4DFE-A6FA-E773D24B5858}",
+    "Language": "SFX",
+    "Hash": "{809FB9F9-B357-C175-3BB9-435333F6CF5E}",
+    "ObjectPath": "Jetpack_Loop",
+    "ShortName": "Jetpack_Loop",
+    "Path": "Event/Jetpack_Loop.bnk",
+    "Events": [
+     {
+      "Id": "2379307986",
+      "Name": "Jetpack_Loop",
+      "ObjectPath": "\\Events\\Default Work Unit\\Jetpack_Loop",
+      "GUID": "{95C6F0E1-1985-4DFE-A6FA-E773D24B5858}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{843BE1C5-A0E9-2631-3D67-88F2E2568D98}"
+ }
+}

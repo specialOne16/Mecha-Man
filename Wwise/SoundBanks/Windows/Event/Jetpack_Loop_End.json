@@ -1,0 +1,33 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "1806144520",
+    "Type": "Event",
+    "GUID": "{9727B57B-6F49-42F8-9F9F-20E60CD4277A}",
+    "Language": "SFX",
+    "Hash": "{B070A69E-F42E-9274-15DD-81EAC2A20D34}",
+    "ObjectPath": "Jetpack_Loop_End",
+    "ShortName": "Jetpack_Loop_End",
+    "Path": "Event/Jetpack_Loop_End.bnk",
+    "Events": [
+     {
+      "Id": "1806144520",
+      "Name": "Jetpack_Loop_End",
+      "ObjectPath": "\\Events\\Default Work Unit\\Jetpack_Loop_End",
+      "GUID": "{9727B57B-6F49-42F8-9F9F-20E60CD4277A}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{9289E0F6-6BB7-3CAC-12E1-C9B366AA91D1}"
+ }
+}
